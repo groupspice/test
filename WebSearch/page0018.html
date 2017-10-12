@@ -1,0 +1,166 @@
+<!-- saved from url=(0014)about:internet -->
+<html lang="en" itemscope itemtype="http://schema.org/Book">
+
+<!-- 
+Smart developers always View Source. 
+
+This application was built using Adobe Flex, an open source framework
+for building rich Internet applications that get delivered via the
+Flash Player or to desktops via Adobe AIR. 
+
+Learn more about Flex at http://flex.org 
+// -->
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta property="og:image" content="content/thumbs/thumb1.jpg" />
+<meta itemprop="image" content="content/thumbs/thumb1.jpg">
+<!--  BEGIN Browser History required section -->
+<link rel="stylesheet" type="text/css" href="../history/history.css" />
+<!--  END Browser History required section -->
+
+<title>testfile1</title>
+<script src="../AC_OETags.js" language="javascript"></script>
+
+<!--  BEGIN Browser History required section -->
+<script src="../history/history.js" language="javascript"></script>
+<!--  END Browser History required section -->
+
+<style type="text/css">
+  body { margin: 0px;
+         overflow:hidden;
+         background-color: ThisisBackgroundColor;
+	 background-image: url(ThisisBackgroundImage);
+         background-repeat:no-repeat;
+         background-position:center;
+       }
+        
+</style>
+
+<script type="text/javascript"> var errorName = null; function isBrowserSupportPlugin() {     var supported = null;     try {         new ActiveXObject("");     }     catch (e) {         errorName = e.name;     }     try {         supported = !!new ActiveXObject("htmlfile");     } catch (e) {         supported =  false;     }     if(errorName != 'ReferenceError' && supported==false){         supported = false;     }else{         supported =true;     }     return supported; } function isMetroIE() {     var matchIE = /MSIE\s([\d.]+)/;     if ((matchIE.test(navigator.userAgent)) && !isBrowserSupportPlugin())         return true;     else         return false; } var iRegex = /android|BlackBerry|Windows Phone|(iP(hone|ad))/i; if (iRegex.test(navigator.userAgent) || isMetroIE()){     var url= "../html5.html?page=17";     if( false &&  window.parent)         window.parent.location=url;         else             window.location =url;             } </script>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+// -----------------------------------------------------------------------------
+// Globals
+// Major version of Flash required
+var requiredMajorVersion = 10;
+// Minor version of Flash required
+var requiredMinorVersion = 0;
+// Minor version of Flash required
+var requiredRevision = 0;
+// -----------------------------------------------------------------------------
+// -->
+</script>
+</head>
+
+<body scroll="no" onload="setBrowserFocus()">
+<script language="JavaScript" type="text/javascript">
+<!--
+
+function closeMe(){return window.close();}
+
+var gotoPage = function(page){
+	if (navigator.appName.indexOf("Microsoft") != -1) {
+		return window['main'].gotoPage(page);
+	}
+	else {
+		return document['main'].gotoPage(page);
+	}
+}
+
+// Version check for the Flash Player that has the ability to start Player Product Install (6.0r65)
+var hasProductInstall = DetectFlashVer(6, 0, 65);
+
+// Version check based upon the values defined in globals
+var hasRequestedVersion = DetectFlashVer(requiredMajorVersion, requiredMinorVersion, requiredRevision);
+
+function getparafromurl() {
+    var url,pos,parastr,para;
+    url = window.location.href;
+    pos = url.indexOf("?")
+    parastr = url.substring(pos+1);
+    return parastr;
+}
+
+function setBrowserFocus(){ document.getElementById('main').focus();}
+
+if ( hasProductInstall && !hasRequestedVersion ) {
+	// DO NOT MODIFY THE FOLLOWING FOUR LINES
+	// Location visited after installation is complete if installation is required
+	var MMPlayerType = (isIE == true) ? "ActiveX" : "PlugIn";
+	var MMredirectURL = window.location;
+    document.title = document.title.slice(0, 47) + " - Flash Player Installation";
+    var MMdoctitle = document.title;
+
+	AC_FL_RunContent(
+		"src", "playerProductInstall",
+		"FlashVars", "MMredirectURL="+MMredirectURL+'&MMplayerType='+MMPlayerType+'&MMdoctitle='+MMdoctitle+"",
+		"width", "100%",
+		"height", "100%",
+		"align", "middle",
+		"id", "main",
+		"quality", "high",
+		"allowFullScreen","true",
+		"FlashVars", getparafromurl(),
+		"bgcolor", "#ffffff",
+		"name", "main",
+		"allowScriptAccess","sameDomain",
+		"type", "application/x-shockwave-flash",
+		"pluginspage", "http://www.adobe.com/go/getflashplayer"
+	);
+} else if (hasRequestedVersion) {
+	// if we've detected an acceptable version
+	// embed the Flash Content SWF when all tests are passed
+	AC_FL_RunContent(
+			"src", "../main?page=18",
+			"width", "100%",
+			"height", "100%",
+			"align", "middle",
+			"allowFullScreen","true",
+			"id", "main",
+			"FlashVars", getparafromurl(),
+			"quality", "high",
+			"bgcolor", "#ffffff",
+			"name", "main",
+			"allowScriptAccess","sameDomain",
+			"type", "application/x-shockwave-flash",
+			"pluginspage", "http://www.adobe.com/go/getflashplayer"
+	);
+  } else {  // flash is too old or we can't detect the plugin
+    var alternateContent = 'Adobe Flash Player not detected. '
+   	+ 'Redirecting to HTML5 version';
+    document.write(alternateContent);  // insert non-flash content
+
+    var url= "../html5.html?page=17";
+    if( false &&  window.parent)
+       window.parent.location=url;
+    else
+       window.location =url;
+  }
+// -->
+</script>
+<noscript>
+  	<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+			id="main" width="100%" height="100%"
+			codebase="http://fpdownload.macromedia.com/get/flashplayer/current/swflash.cab">
+			<param name="movie" value="../main.swf?page=18" />
+			<param name="quality" value="high" />
+			<param name="allowFullScreen" value="true" />
+			<param name="bgcolor" value="#ffffff" />
+			<param name="allowScriptAccess" value="sameDomain" />
+			<embed src="main.swf" quality="high" bgcolor="#ffffff"
+				width="100%" height="100%" name="main" align="middle"
+				play="true"
+				loop="false"
+				allowFullScreen="true"
+				quality="high"
+				allowScriptAccess="sameDomain"
+				type="application/x-shockwave-flash"
+				pluginspage="http://www.adobe.com/go/getflashplayer">
+			</embed>
+	</object>
+</noscript>
+<noscript> Brilliant Beginningsdevelop or strengthen your habit of regular time alone with God.19. Allow everyone to answer this question: “How can we pray for you this week?” Write prayer requests on your Prayer and Praise Report and commit to praying for each other throughout the week.Before We Meet AgainIn Session Two, we will be discussing Acts chapters 6 through 8. Although questions will target specific passages, it is important that you understand the context of the passages we will be studying. With this in mind, read these chapters before meeting for Session Two.Study NotesFilled with the Spirit vs. Baptism of the Spirit: Though some Chris- tians di er in their perspective on this issue, being filled with the Spirit appears to be di erent from being baptized by the Spirit. The apostle Paul speaks of being baptized into Christ and receiving the Spirit as one event by which Christ places believers into his body (Rom. 6:4–6; 8:9–16; 1 Cor. 12:3, 13; Gal. 3:1–5, 26–28; 4:4–7). No- where in his letters does he seem to imagine a person who has put faith in Christ but who has not received the Spirit. (However, see Acts 8:15–16.)Being filled with the Spirit, on the other hand, appears to be an ongoing experience of dependence on the Holy Spirit’s power to live righteously. Although filled initially on the Day of Pentecost, Peter was filled again in Acts 4:8. Many of the same people filled with the Spirit in Acts 2 were filled again in Acts 4:31. Acts 6:5 describes Stephen as a man “full of faith and of the Holy Spirit,” yet Acts 7:55 records his being filled again. Paul was filled with the Spirit in Acts 9:17 and again in Acts 13:9.19￼￼￼￼ </noscript> 
+ </body>
+</html>
