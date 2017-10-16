@@ -18,7 +18,10 @@ Learn more about Flex at http://flex.org
 <!--  BEGIN Browser History required section -->
 <link rel="stylesheet" type="text/css" href="history/history.css" />
 <!--  END Browser History required section -->
-
+<!-- Disable print & right-click behavior -->
+  <style type="text/css" media="print"> img { display: none; } </style>
+  <script> document.oncontextmenu = new Function('return false'); </script>
+    
 <title>Acts</title>
 <script src="AC_OETags.js" language="javascript"></script>
 
@@ -40,16 +43,7 @@ Learn more about Flex at http://flex.org
     
 </style>
     
-    <style type="text/css" media="print">
-.noprint { display:none }
-</style>
-
-
-<body>
-<div> This can print</div> 
-<div class="noprint"> This can't print</div> 
-<div> This can print</div> 
-</body>
+    
 
 <script type="text/javascript"> var errorName = null; function isBrowserSupportPlugin() {     var supported = null;     try {         new ActiveXObject("");     }     catch (e) {         errorName = e.name;     }     try {         supported = !!new ActiveXObject("htmlfile");     } catch (e) {         supported =  false;     }     if(errorName != 'ReferenceError' && supported==false){         supported = false;     }else{         supported =true;     }     return supported; } function isMetroIE() {     var matchIE = /MSIE\s([\d.]+)/;     if ((matchIE.test(navigator.userAgent)) && !isBrowserSupportPlugin())         return true;     else         return false; } var iRegex = /android|BlackBerry|Windows Phone|(iP(hone|ad))/i; if (iRegex.test(navigator.userAgent) || isMetroIE()){     var url= "html5.html?page=0";     if( false &&  window.parent)         window.parent.location=url;         else             window.location =url;             } </script>
 
